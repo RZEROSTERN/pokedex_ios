@@ -10,14 +10,14 @@ import SwiftUI
 struct SplashView: View {
     var body: some View {
         ZStack {
-            Rectangle()
-                .background(Color.accentColor)
             Image("pokeball")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 300, height: 300)
-            Text("Hello buttnuggets").font(.title)
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .accentColor(Color.accentColor)
+        .background(Color.accentColor)
     }
 }
 
